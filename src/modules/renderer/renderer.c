@@ -264,6 +264,7 @@ void sokol_init_global_uniforms(
 
     glm_mat4_mul(u->mat_p, u->mat_v, u->mat_vp);
     glm_mat4_inv(u->mat_v, u->inv_mat_v);
+    glm_mat4_inv(u->mat_vp, u->inv_mat_vp);
 
     /* Light parameters */
     if (state->light) {
